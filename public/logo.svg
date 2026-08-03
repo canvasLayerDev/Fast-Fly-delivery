@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140" width="100%" height="100%">
+  <!-- White Background -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="12" />
+  
+  <!-- Speed lines -->
+  <g transform="translate(10, 40)">
+    <polygon points="0,50 80,30 80,45" fill="#3B82F6" />
+    <polygon points="0,85 100,55 100,75" fill="#F59E0B" />
+    <polygon points="30,115 100,90 100,100" fill="#F59E0B" />
+  </g>
+
+  <!-- Drone Icon -->
+  <g transform="translate(100, 20)">
+    <!-- Propellers -->
+    <ellipse cx="20" cy="10" rx="28" ry="5" fill="#3B82F6" />
+    <rect x="17" y="10" width="6" height="15" fill="#64748B" />
+    
+    <ellipse cx="100" cy="10" rx="28" ry="5" fill="#3B82F6" />
+    <rect x="97" y="10" width="6" height="15" fill="#64748B" />
+    
+    <!-- Main Body -->
+    <path d="M 10 30 Q 60 10 110 30 L 120 45 Q 60 65 0 45 Z" fill="#3B82F6" />
+    
+    <!-- Camera -->
+    <circle cx="60" cy="45" r="14" fill="#1E293B" />
+    <circle cx="60" cy="45" r="5" fill="#38BDF8" />
+    
+    <!-- Claws -->
+    <path d="M 25 50 C 10 75 10 90 20 95" fill="none" stroke="#3B82F6" stroke-width="8" stroke-linecap="round" />
+    <path d="M 95 50 C 110 75 110 90 100 95" fill="none" stroke="#3B82F6" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Box -->
+    <polygon points="35,75 85,75 85,115 35,115" fill="#F59E0B" />
+    <polygon points="35,75 60,65 85,75 60,85" fill="#FCD34D" />
+    <polygon points="35,75 60,85 60,125 35,115" fill="#F59E0B" />
+    <polygon points="85,75 60,85 60,125 85,115" fill="#D97706" />
+  </g>
+
+  <!-- Text -->
+  <g transform="translate(250, 0)">
+    <text x="0" y="75" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="900" font-size="64" fill="#0B2144" letter-spacing="1">FAST FLY</text>
+    <text x="15" y="115" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" font-size="32" fill="#0B2144" letter-spacing="4">DELIVERY</text>
+  </g>
+</svg>
