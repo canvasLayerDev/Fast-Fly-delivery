@@ -35,13 +35,13 @@ export const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center group">
+        <Link href="/" className="flex items-center">
           <Image
             src="/logo.svg"
             alt="Fast Fly Delivery Logo"
             width={180}
             height={60}
-            className="h-10 md:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+            className="h-10 md:h-12 w-auto object-contain"
             priority
           />
         </Link>

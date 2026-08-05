@@ -22,7 +22,6 @@ import {
   SlideIn,
   StaggerContainer,
   StaggerItem,
-  ButtonReveal,
 } from "@/components/animation/AnimationWrappers";
 import {
   INDUSTRY_ITEMS,
@@ -89,14 +88,14 @@ export default function Home() {
             priority
             sizes="100vw"
             quality={85}
-            className="object-cover object-[82%_center] sm:object-[80%_center] lg:object-right-center"
+            className="object-cover"
           />
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0D2C5A]/80 via-[#0D2C5A]/60 to-[#0D2C5A]/90 md:bg-gradient-to-r md:from-[#0D2C5A]/95 md:via-[#0D2C5A]/70 md:to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-primary/80 pointer-events-none" />
         <div className="absolute inset-0 opacity-[0.04] pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "32px 32px" }} />
 
-        <div className="container-custom relative z-10 w-full py-10 sm:py-16 md:py-20 lg:py-24">
+        <div className="container-custom relative z-10 w-full py-16 md:py-24">
           <div className="max-w-2xl xl:max-w-3xl space-y-5 sm:space-y-6">
             <FadeUp delay={0.1}>
               <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/95 text-[13px] sm:text-[14px] font-semibold tracking-[0.08em] uppercase">
@@ -121,25 +120,25 @@ export default function Home() {
 
             <FadeUp delay={0.4}>
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
-                <ButtonReveal delay={0.1} className="w-full sm:w-auto">
+                <FadeUp delay={0.1} className="w-full sm:w-auto">
                   <Link href="/contact" className="w-full sm:w-auto block">
-                    <Button variant="primary" size="lg" className="w-full sm:w-auto font-semibold px-10 shadow-xl shadow-accent/30 text-[15px] sm:text-[16px]">
+                    <Button variant="primary" size="lg" className="w-full sm:w-auto font-semibold px-10 shadow-xl shadow-accent/30 text-fluid-small">
                       Hire Riders <ChevronRight className="w-5 h-5 ml-1 inline-block" />
                     </Button>
                   </Link>
-                </ButtonReveal>
+                </FadeUp>
 
-                <ButtonReveal delay={0.2} className="w-full sm:w-auto">
+                <FadeUp delay={0.2} className="w-full sm:w-auto">
                   <Link href="/contact" className="w-full sm:w-auto block">
-                    <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold px-10 text-white border-white/30 hover:bg-white/15 hover:border-white/50 bg-white/5 backdrop-blur-sm text-[15px] sm:text-[16px] transition-all">
+                    <Button variant="outline" size="lg" className="w-full sm:w-auto font-semibold px-10 text-white border-white/30 hover:bg-white/15 hover:border-white/50 bg-white/5 backdrop-blur-sm text-fluid-small transition-all">
                       Get a Free Quote <ChevronRight className="w-5 h-5 ml-1 inline-block" />
                     </Button>
                   </Link>
-                </ButtonReveal>
+                </FadeUp>
               </div>
             </FadeUp>
 
-            <StaggerContainer className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-4 sm:pt-6">
+            <StaggerContainer className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 pt-4 sm:pt-6">
               {HERO_FEATURES.map((feat, idx) => (
                 <StaggerItem key={idx}>
                   <div className="group flex items-center gap-3 p-3.5 sm:p-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/15 hover:bg-white/20 hover:border-white/30 transition-all duration-300 cursor-default">
@@ -154,11 +153,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0D2C5A] to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-primary to-transparent pointer-events-none" />
       </section>
 
       {/* 2. ABOUT PREVIEW — BLUE BACKGROUND & WHITE TEXT */}
-      <section className="relative bg-[#0D2C5A] text-white overflow-hidden border-t border-white/10">
+      <section className="relative bg-primary text-white overflow-hidden border-t border-white/10">
         <div className="flex flex-col lg:flex-row">
           {/* Image Side */}
           <div className="relative w-full lg:w-1/2 min-h-[340px] sm:min-h-[440px] lg:min-h-[600px] shrink-0 overflow-hidden">
@@ -188,7 +187,7 @@ export default function Home() {
                   From restaurants and cloud kitchens to food delivery platforms and retail businesses, we provide reliable rider solutions tailored to your operational needs. Our mission is to help businesses deliver every order safely, efficiently, and on time.
                 </p>
 
-                <div className="grid sm:grid-cols-2 gap-5 mb-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
                   <div className="flex items-start gap-4 p-4.5 rounded-2xl bg-white/10 border border-white/15 backdrop-blur-md shadow-md hover:bg-white/15 transition-all">
                     <div className="bg-accent/20 p-3 rounded-xl shrink-0 flex items-center justify-center border border-accent/30 text-accent">
                       <Users className="w-6 h-6 text-accent" />
@@ -357,7 +356,7 @@ export default function Home() {
             </FadeUp>
           </div>
 
-          <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
             {PLATFORMS.map((platform, i) => (
               <StaggerItem key={i}>
                 <Link href={platform.href} className="block h-full group">
@@ -404,7 +403,7 @@ export default function Home() {
             </FadeUp>
           </div>
 
-          <StaggerContainer className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+          <StaggerContainer className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {PROCESS_STEPS.map((item, idx) => (
               <StaggerItem key={idx} className="h-full">
                 <div className="bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/15 flex flex-col items-center text-center h-full justify-between hover:bg-white/15 transition-all duration-300">
@@ -429,8 +428,8 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
             <FadeUp>
-              <div className="text-accent font-bold text-[12px] sm:text-[13px] tracking-[0.35em] uppercase mb-3 font-poppins">
-                U A E &nbsp; C O V E R A G E
+              <div className="text-accent font-bold text-fluid-small tracking-[0.35em] uppercase mb-3 font-poppins">
+                UAE COVERAGE
               </div>
               <h2 className="text-fluid-section font-extrabold font-poppins text-gray-900 mb-3 tracking-tight">
                 Serving Businesses Across the UAE
@@ -441,7 +440,7 @@ export default function Home() {
             </FadeUp>
           </div>
 
-          <StaggerContainer className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+          <StaggerContainer className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
             {EMIRATES_ITEMS.map((emirate, i) => (
               <StaggerItem key={i}>
                 <Link href="/contact" className="block group h-full">

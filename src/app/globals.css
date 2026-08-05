@@ -18,24 +18,24 @@
   --background: #F8FAFC;
   --foreground: #111827;
 
-  /* ── Luxury Typography Scale ── */
-  /* Hero Title: 40px (Mobile) -> 60-64px (Desktop) */
-  --text-hero: clamp(2.5rem, 4vw + 1rem, 4rem);
+  /* ── Typography Scale ── */
+  /* Hero Title: 32px (Mobile) -> 64px (Desktop) */
+  --text-hero: clamp(2rem, 5vw + 1rem, 4rem);
 
-  /* Page Heading: 36px (Mobile) -> 48px (Desktop) */
-  --text-page: clamp(2.25rem, 2.5vw + 1rem, 3rem);
+  /* Page Heading: 28px (Mobile) -> 48px (Desktop) */
+  --text-page: clamp(1.75rem, 4vw + 1rem, 3rem);
 
-  /* Section Heading: 30px (Mobile) -> 38-42px (Desktop) */
-  --text-section: clamp(1.875rem, 2vw + 1rem, 2.625rem);
+  /* Section Heading: 26px (Mobile) -> 42px (Desktop) */
+  --text-section: clamp(1.625rem, 3vw + 1rem, 2.625rem);
 
-  /* Card Heading: 20px (Mobile) -> 24px (Desktop) */
-  --text-card: clamp(1.25rem, 0.5vw + 1rem, 1.5rem);
+  /* Card Heading: 18px (Mobile) -> 24px (Desktop) */
+  --text-card: clamp(1.125rem, 1.5vw + 0.875rem, 1.5rem);
 
-  /* Body Text: 17px (Mobile) -> 18px (Desktop) */
-  --text-body: clamp(1.0625rem, 0.25vw + 1rem, 1.125rem);
+  /* Body Text: 15px (Mobile) -> 18px (Desktop) */
+  --text-body: clamp(0.9375rem, 0.5vw + 0.875rem, 1.125rem);
 
-  /* Small Text: 15px (Mobile) -> 16px (Desktop) */
-  --text-small: clamp(0.9375rem, 0.2vw + 0.875rem, 1rem);
+  /* Small Text: 14px (Mobile) -> 16px (Desktop) */
+  --text-small: clamp(0.875rem, 0.2vw + 0.875rem, 1rem);
 
   /* Button Text: 16px Constant */
   --text-button: 1rem;
@@ -62,13 +62,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-poppins), sans-serif;
-  line-height: 1.15;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   font-weight: 700;
+  text-wrap: balance; /* Prevents awkward orphans on headings */
 }
 
 p {
   line-height: 1.7;
+  text-wrap: pretty; /* Prevents single word on last line */
 }
 
 /* ── Typography Utility Classes ── */
@@ -123,17 +125,17 @@ p {
   max-width: var(--container-max-w);
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(1.25rem, 4vw, 2.5rem);
-  padding-right: clamp(1.25rem, 4vw, 2.5rem);
+  padding-left: clamp(1rem, 5vw, 2.5rem);
+  padding-right: clamp(1rem, 5vw, 2.5rem);
 }
 
-/* Luxury Image Hover & Shadow Effects */
+/* Image Hover & Shadow Effects */
 .img-luxury-shadow {
-  box-shadow: 0 20px 40px -15px rgba(13, 44, 90, 0.08);
-  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1), box-shadow 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  box-shadow: 0 10px 20px -10px rgba(13, 44, 90, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .img-luxury-shadow:hover {
-  transform: scale(1.03);
-  box-shadow: 0 30px 60px -15px rgba(13, 44, 90, 0.15);
+  transform: scale(1.01);
+  box-shadow: 0 15px 30px -10px rgba(13, 44, 90, 0.12);
 }

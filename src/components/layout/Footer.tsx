@@ -73,13 +73,16 @@ export const Footer = () => {
           <div>
             <h3 className="font-poppins font-semibold text-fluid-card mb-6 text-accent">Quick Links</h3>
             <ul className="space-y-3.5">
-              {NAV_LINKS.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-gray-300 hover:text-white transition-colors text-fluid-small">
-                    {link.name === "About" ? "About Us" : link.name === "Contact" ? "Contact Us" : link.name === "Services" ? "Our Services" : link.name}
-                  </Link>
-                </li>
-              ))}
+              {NAV_LINKS.map((link) => {
+                const linkName = link.name === "Home" ? "Home" : `${link.name} Us`;
+                return (
+                  <li key={link.name}>
+                    <Link href={link.href} className="text-gray-300 hover:text-white transition-colors text-fluid-small">
+                      {link.name === "Services" ? "Our Services" : linkName}
+                    </Link>
+                  </li>
+                );
+              })}
               <li>
                 <Link href="/contact" className="text-accent hover:underline transition-colors text-fluid-small font-semibold">
                   Request a Quote
