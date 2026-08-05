@@ -34,7 +34,7 @@ Welcome to the definitive architecture and operational documentation for the **F
 * **UAE-Wide Coverage**: Operating in Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, Umm Al Quwain, and Al Ain.
 * **Primary Contact Details**:
   * **Office**: International City, Dubai (Opposite Morocco Cluster)
-  * **Phone / WhatsApp**: [+971 52 140 2268](tel:+971521402268)
+  * **Phone / WhatsApp**: [+971 52 140 2268](tel:+971564583330)
   * **Email**: [Fastfly2002@gmail.com](mailto:Fastfly2002@gmail.com)
 
 ---
@@ -183,7 +183,7 @@ Defined in [layout.tsx](file:///d:/fast-fly/Fast-Fly-delivery/src/app/layout.tsx
    - Quick Navigation links, Service deep links, direct location address, telephone (`+971 52 140 2268`), and email links (`Fastfly2002@gmail.com`).
 3. **[FloatingContactButtons.tsx](file:///d:/fast-fly/Fast-Fly-delivery/src/components/FloatingContactButtons.tsx)**:
    - Fixed at `right-6 bottom-6 z-50`.
-   - Green WhatsApp quick button (`https://wa.me/971521402268`).
+   - Green WhatsApp quick button (`https://wa.me/971564583330`).
    - Blue Email mailto button (`mailto:Fastfly2002@gmail.com`).
 
 ---

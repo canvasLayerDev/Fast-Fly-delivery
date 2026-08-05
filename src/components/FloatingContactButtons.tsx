@@ -5,7 +5,7 @@ export function FloatingContactButtons() {
   return (
     <div className="fixed right-4 bottom-4 md:right-6 md:bottom-6 z-50 flex flex-col gap-3">
       <Link
-        href="https://wa.me/971521402268"
+        href="https://wa.me/971564583330"
         target="_blank"
         aria-label="WhatsApp"
       >

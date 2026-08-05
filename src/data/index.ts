@@ -35,10 +35,10 @@ import type {
 export const COMPANY_INFO = {
   name: "Fast Fly Delivery Service",
   phone: "+971 52 140 2268",
-  phoneTel: "tel:+971521402268",
+  phoneTel: "tel:+971564583330",
   email: "Fastfly2002@gmail.com",
   emailMailto: "mailto:Fastfly2002@gmail.com",
-  whatsappUrl: "https://wa.me/971521402268",
+  whatsappUrl: "https://wa.me/971564583330",
   addressLine1: "International City, Dubai",
   addressLine2: "Opposite Morocco Cluster",
   mapsUrl: "https://maps.google.com/?q=International+City+Dubai+Morocco+Cluster",
