@@ -34,7 +34,7 @@ import type {
 
 export const COMPANY_INFO = {
   name: "Fast Fly Delivery Service",
-  phone: "+971 52 140 2268",
+  phone: "056 458 3330",
   phoneTel: "tel:+971564583330",
   email: "alaya@fastflydelivery.com",
   emailMailto: "mailto:alaya@fastflydelivery.com",
