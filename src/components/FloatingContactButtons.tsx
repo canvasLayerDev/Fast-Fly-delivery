@@ -15,7 +15,7 @@ export function FloatingContactButtons() {
       </Link>
 
       <Link
-        href="mailto:Fastfly2002@gmail.com"
+        href="mailto:alaya@fastflydelivery.com"
         aria-label="Email"
       >
         <div className="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300">

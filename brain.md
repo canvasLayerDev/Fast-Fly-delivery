@@ -35,7 +35,7 @@ Welcome to the definitive architecture and operational documentation for the **F
 * **Primary Contact Details**:
   * **Office**: International City, Dubai (Opposite Morocco Cluster)
   * **Phone / WhatsApp**: [+971 52 140 2268](tel:+971564583330)
-  * **Email**: [Fastfly2002@gmail.com](mailto:Fastfly2002@gmail.com)
+  * **Email**: [alaya@fastflydelivery.com](mailto:alaya@fastflydelivery.com)
 
 ---
 
@@ -180,11 +180,11 @@ Defined in [layout.tsx](file:///d:/fast-fly/Fast-Fly-delivery/src/app/layout.tsx
 2. **[Footer.tsx](file:///d:/fast-fly/Fast-Fly-delivery/src/components/layout/Footer.tsx)**:
    - 4-column dark primary theme layout (`bg-primary text-white`).
    - 120px desktop padding (`pt-[clamp(4.375rem,6vw,7.5rem)]`).
-   - Quick Navigation links, Service deep links, direct location address, telephone (`+971 52 140 2268`), and email links (`Fastfly2002@gmail.com`).
+   - Quick Navigation links, Service deep links, direct location address, telephone (`+971 52 140 2268`), and email links (`alaya@fastflydelivery.com`).
 3. **[FloatingContactButtons.tsx](file:///d:/fast-fly/Fast-Fly-delivery/src/components/FloatingContactButtons.tsx)**:
    - Fixed at `right-6 bottom-6 z-50`.
    - Green WhatsApp quick button (`https://wa.me/971564583330`).
-   - Blue Email mailto button (`mailto:Fastfly2002@gmail.com`).
+   - Blue Email mailto button (`mailto:alaya@fastflydelivery.com`).
 
 ---
 
