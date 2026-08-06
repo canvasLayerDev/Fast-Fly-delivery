@@ -446,7 +446,7 @@ export default function Contact() {
       </section>
 
       {/* 6. FINAL CTA BANNER */}
-      <section className="relative overflow-hidden py-12 sm:py-16 flex flex-col justify-center items-center text-center text-white border-t border-white/10">
+      <section className="relative overflow-hidden py-12 sm:py-16 flex flex-col justify-center text-left sm:text-center sm:items-center text-white border-t border-white/10">
         <Image
           src="/background.png"
           alt="Fast Fly Delivery Background"
