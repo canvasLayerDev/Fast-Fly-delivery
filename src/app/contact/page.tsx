@@ -59,7 +59,7 @@ export default function Contact() {
   const onSubmit = async (data: FormValues) => {
     setSubmitError("");
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/contact.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
