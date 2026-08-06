@@ -87,7 +87,7 @@ export default function Services() {
                   <FadeUp yOffset={20} delay={0.1}>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="flex w-12 h-12 bg-primary/5 rounded-xl items-center justify-center text-primary shrink-0">
-                        <service.icon className="w-6 h-6" strokeWidth={1.5} />
+                        <service.icon className="w-6 h-6" />
                       </div>
                     </div>
                     
@@ -158,7 +158,7 @@ export default function Services() {
                 <div className="flex flex-col">
                   {feature.icon && (
                     <div className="w-12 h-12 text-primary mb-6">
-                      <feature.icon className="w-8 h-8" strokeWidth={1.5} />
+                      <feature.icon className="w-8 h-8" />
                     </div>
                   )}
                   <h3 className="text-fluid-card font-bold font-poppins text-text-main mb-3">{feature.title}</h3>
