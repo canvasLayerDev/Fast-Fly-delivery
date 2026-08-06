@@ -54,10 +54,29 @@ export default function Contact() {
     resolver: zodResolver(formSchema),
   });
 
+  const [submitError, setSubmitError] = useState("");
+
   const onSubmit = async (data: FormValues) => {
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    void data;
-    setIsSubmitted(true);
+    setSubmitError("");
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || "Something went wrong");
+      }
+
+      setIsSubmitted(true);
+    } catch (error: any) {
+      setSubmitError(error.message || "Failed to submit request. Please try again.");
+    }
   };
 
   return (
@@ -334,6 +353,12 @@ export default function Contact() {
                         placeholder="Tell us more about your business needs..."
                       />
                     </div>
+
+                    {submitError && (
+                      <div className="p-3 bg-red-50 text-red-600 border border-red-200 rounded-xl text-sm font-medium">
+                        {submitError}
+                      </div>
+                    )}
 
                     <Button type="submit" variant="primary" size="lg" className="w-full" disabled={isSubmitting}>
                       {isSubmitting ? "Submitting..." : "Submit Request"}
